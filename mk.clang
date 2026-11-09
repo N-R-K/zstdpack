@@ -1,0 +1,10 @@
+# Clang build: make -f mk.clang. See doc/design.md for the flags.
+include Makefile
+
+CC = clang
+
+CFLAGS = -Os -g0 -Wall -Wextra \
+         -U_FORTIFY_SOURCE \
+         -fno-builtin -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables \
+         -fcf-protection=none \
+         $(if $(MARCH),-march=$(MARCH))

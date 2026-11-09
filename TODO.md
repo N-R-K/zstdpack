@@ -1,0 +1,2 @@
+- multithreaded decompressor
+- unpack in place so /proc/self/exe survives; see doc/design.md

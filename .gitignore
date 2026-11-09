@@ -1,0 +1,5 @@
+zstdpack
+*.zst
+*.zstdpack
+mem.o
+memtest
